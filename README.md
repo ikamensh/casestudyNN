@@ -2,7 +2,7 @@
 
 experiments in learning Machine Learning / Deep Learning
 
-Experiment1: single neurons:
+*Experiment1: single neurons:*
 
 Assumptions about how a MLP should process forward prop and backprop are tested on small number of neurons and simple numbers.
 
@@ -17,7 +17,7 @@ Assume we optimize the layer to achieve output of 1e12; let us follow the evolut
 
 
 
-Experiment2: Deep Learning:
+*Experiment2: Deep Learning:*
 
 A problem frequently mentioned in context of deep neural networks is the problem of vanishing/expanding gradients.
 In backpropagation the partial derivatives depend on the multiple of the other weights along the signal channel. 
