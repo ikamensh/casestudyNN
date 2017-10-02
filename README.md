@@ -2,7 +2,7 @@
 
 experiments in learning Machine Learning / Deep Learning
 
-*Experiment1: single neurons:*
+# *Experiment1: single neurons:*
 
 Assumptions about how a MLP should process forward prop and backprop are tested on small number of neurons and simple numbers.
 
@@ -17,7 +17,7 @@ Assume we optimize the layer to achieve output of 1e12; let us follow the evolut
 
 
 
-*Experiment2: Deep Learning:*
+# *Experiment2: Deep Learning:*
 
 A problem frequently mentioned in context of deep neural networks is the problem of vanishing/expanding gradients.
 In backpropagation the partial derivatives depend on the multiple of the other weights along the signal channel. 
@@ -34,8 +34,7 @@ For weights [5e-3, 5e-2] the problem remained to be the one of the vanishing gra
 however on 4th training iteration the loss(error = abs(1e12 - output)) jumps from roughtly 1e12 to Xe17. This means that after coming closer to right answer, the optimization
 overshot the target by 5 orders of magnitude. From there on, optimization loses numerical stability. Ofcourse in this demonstration it is also affected by 
 impractically large learning rate lr=1. Yet the problem is quite real: deep neural networks are prone to lose numerical stability if no countermeasures are taken.
-Countermeasures:
-1) (Countering exploding gradients) Cap the gradient (clipnorm / clipvalue attributes in Keras)
-2) smart values during initialization
+  Countermeasures:
+  1) (Countering exploding gradients) Cap the gradient (clipnorm / clipvalue attributes in Keras)
+  2) smart values during initialization
 
-Problems of vanishing and exploding gradients are investigated.
